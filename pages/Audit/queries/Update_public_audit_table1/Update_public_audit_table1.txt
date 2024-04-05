@@ -1,0 +1,1 @@
+UPDATE public.audit_table SET "userid"= '{{Audit_Table.updatedRow.userid}}', "event"= '{{Audit_Table.updatedRow.event}}', "data"= '{{Audit_Table.updatedRow.data}}', "remarks"= '{{Audit_Table.updatedRow.remarks}}' WHERE "id"= {{Audit_Table.updatedRow.id}};

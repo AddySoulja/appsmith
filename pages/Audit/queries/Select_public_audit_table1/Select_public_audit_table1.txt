@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  public.audit_table
+ORDER BY
+  "{{Audit_Table.sortOrder.column || 'id'}}" {{Audit_Table.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Audit_Table.pageSize}}
+OFFSET
+  {{Audit_Table.pageOffset}}

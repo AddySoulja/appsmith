@@ -2,5 +2,5 @@ UPDATE users
 SET email={{emailInput.text || usersTable.selectedRow.email}},
 		name={{nameInput.text || usersTable.selectedRow.name}},
 		phone={{phoneInput.text || usersTable.selectedRow.phone}},
-		kycstatus={{kycstatusInput.text || usersTable.selectedRow.kycstatus}}
+		kycstatus={{kycStatusInput.text || usersTable.selectedRow.kycstatus}}
 WHERE id={{usersTable.selectedRow.id}};

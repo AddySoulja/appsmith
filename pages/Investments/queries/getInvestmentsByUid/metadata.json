@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "getUsers",
+    "name": "getInvestmentsByUid",
     "datasource": {
       "name": "PlusCash Investors-web Dev DB",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Users",
+    "pageId": "Investments",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM users;",
+      "body": "SELECT amc_name, folio, scheme_name, last_trxn_date, market_value, nav, closing_balance, last_nav_date, asset_type, isin, cost_value \nFROM investor_summary \nLEFT JOIN investors ON investor_summary.investor_id = investors.id \nWHERE investors.userid = '{{appsmith.store.userid}}';\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,18 +27,24 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [
+      "appsmith.store.userid"
+    ],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-04-03T10:02:19Z"
+    "createdAt": "2024-04-05T17:25:31Z"
   },
-  "id": "Users_getUsers",
+  "id": "Investments_getInvestmentsByUid",
   "deleted": false,
-  "gitSyncId": "660d27c10df6eb2bdf9b0796_660d292bfa3b2a2ca3cc9ecd"
+  "gitSyncId": "66100c7ec0e59c155a6ba032_6610340b98f54e04c0543236"
 }

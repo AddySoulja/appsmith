@@ -1,6 +1,10 @@
 {
   "pages": [
     {
+      "id": "Investments",
+      "isDefault": false
+    },
+    {
       "id": "Users",
       "isDefault": true
     }
@@ -14,8 +18,8 @@
     },
     "navigationSetting": {
       "showNavbar": true,
-      "orientation": "side",
-      "navStyle": "sidebar",
+      "orientation": "top",
+      "navStyle": "stacked",
       "position": "static",
       "itemStyle": "text",
       "colorStyle": "light",
@@ -26,7 +30,11 @@
   },
   "color": "#ECECEC",
   "icon": "bar-graph",
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

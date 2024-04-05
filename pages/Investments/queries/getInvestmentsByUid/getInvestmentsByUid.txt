@@ -1,0 +1,4 @@
+SELECT amc_name, folio, scheme_name, last_trxn_date, market_value, nav, closing_balance, last_nav_date, asset_type, isin, cost_value 
+FROM investor_summary 
+LEFT JOIN investors ON investor_summary.investor_id = investors.id 
+WHERE investors.userid = '{{appsmith.store.userid}}';

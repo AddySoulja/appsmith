@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "clearUserid",
+    "fullyQualifiedName": "userStore.clearUserid",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,16 +14,15 @@
       "userPermissions": []
     },
     "pageId": "Users",
-    "collectionId": "Users_JSObject1",
+    "collectionId": "66103e4382c47156048017c2",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-04-03T15:04:45Z"
+    "createdAt": "2024-04-05T18:14:00Z"
   },
-  "id": "Users_JSObject1.myFun1",
+  "id": "Users_userStore.clearUserid",
   "deleted": false,
-  "gitSyncId": "660d27c10df6eb2bdf9b0796_660d700dfa3b2a2ca3cca4dd"
+  "gitSyncId": "66100c7ec0e59c155a6ba032_66103f6861bf41047d7a12df"
 }

@@ -1,47 +1,38 @@
 {
   "unpublishedPage": {
-    "name": "Users",
-    "slug": "users",
+    "name": "Investments",
+    "slug": "investments",
     "layouts": [
       {
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 570,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 1292,
-          "useAutoLayout": true,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "vertical",
           "backgroundColor": "none",
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 880,
           "containerStyle": "none",
-          "snapRows": 124,
+          "snapRows": 86,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
           "version": 89,
+          "minHeight": 880,
+          "useAutoLayout": true,
+          "parentColumnSpace": 1,
           "responsiveBehavior": "fill",
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "vertical",
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "7raq8j0iwu",
+                  "id": "egcu6a4r45",
                   "align": "start"
-                }
-              ]
-            },
-            {
-              "children": [
-                {
-                  "id": "0mv4o8khfm",
-                  "align": "center"
                 }
               ]
             }
@@ -50,18 +41,20 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Users_getUsers",
-              "name": "getUsers",
+              "id": "Investments_getInvestmentsByUid",
+              "name": "getInvestmentsByUid",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.userid"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Users",
+        "id": "Investments",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -72,5 +65,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "660d27c10df6eb2bdf9b0796_660d27c10df6eb2bdf9b0798"
+  "gitSyncId": "66100c7ec0e59c155a6ba032_66103189f13f9a7a30d91af4"
 }

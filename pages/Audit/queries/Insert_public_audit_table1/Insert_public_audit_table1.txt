@@ -1,1 +1,0 @@
-INSERT INTO public.audit_table ("userid","event","data","remarks") VALUES ('{{(Audit_Table.newRow || {}).userid}}','{{(Audit_Table.newRow || {}).event}}','{{(Audit_Table.newRow || {}).data}}','{{(Audit_Table.newRow || {}).remarks}}')

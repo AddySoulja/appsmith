@@ -1,67 +1,32 @@
 {
+  "gitSyncId": "660d27c10df6eb2bdf9b0796_660d73d372effb7176dbb2cd",
   "unpublishedPage": {
-    "name": "Audit",
-    "slug": "audit",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 530,
-          "containerStyle": "none",
-          "snapRows": 53,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 550,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Audit_Select_public_audit_table1",
-              "name": "Select_public_audit_table1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Audit_Table.sortOrder.column || 'id'",
-                "Audit_Table.pageOffset",
-                "Audit_Table.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"",
-                "Audit_Table.pageSize"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Audit_Total_record_public_audit_table1",
-              "name": "Total_record_public_audit_table1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Audit",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 53,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "660d27c10df6eb2bdf9b0796_660d73d372effb7176dbb2cd"
+    "name": "Audit",
+    "slug": "audit"
+  }
 }
